@@ -10,4 +10,6 @@ result_two=$(( a*b+c ))
 echo "The result of a*b+c is $result_two"
 result_three=`echo $a $b $c | awk '{print $3+($1/$2)}'`
 echo "The result of c+a/b is $result_three"
+result_four=`echo $a $b $c | awk '{print ($1%$2)+$3}'`
+echo "The result of a%b+c is $result_four"
 
