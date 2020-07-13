@@ -6,4 +6,6 @@ read -p "Enter the third number: " c
 
 result_one=$(( a+b*c ))
 echo "The result of a+b*c is $result_one"
+result_two=$(( a*b+c ))
+echo "The result of a*b+c is $result_two"
 
