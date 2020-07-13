@@ -15,7 +15,10 @@ operations["a*b+c"]=$result_two
 operations["c+a/b"]=$result_three
 operations["a%b+c"]=$result_four
 
+counter=0
 for index in ${!operations[@]}
 do
-	echo $index" : "${operations[$index]}
+	array[((counter++))]=${operations[$index]}
 done
+
+echo ${array[@]}
