@@ -8,4 +8,6 @@ result_one=$(( a+b*c ))
 echo "The result of a+b*c is $result_one"
 result_two=$(( a*b+c ))
 echo "The result of a*b+c is $result_two"
+result_three=`echo $a $b $c | awk '{print $3+($1/$2)}'`
+echo "The result of c+a/b is $result_three"
 
